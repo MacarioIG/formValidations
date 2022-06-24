@@ -9,13 +9,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 5vh  auto 5vh auto;
+    margin: 5vh auto 5vh auto;
     align-items: center;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: aliceblue;
     font-family: 'Carrois Gothic', sans-serif;
@@ -29,30 +29,31 @@ body {
 
 .form-container input {
 
-    margin: 1vh 0 1vh 0 ;
+    margin: 1vh 0 1vh 0;
     padding: 1vh;
     background-color: rgba(4, 2, 15, 0.1);
-    border: none;
+    /* border: none; */
     width: 30%;
     color: aliceblue;
     font-family: 'Carrois Gothic', sans-serif;
-    border-bottom: solid 2px white;
+    /* border-bottom: solid 2px white; */
 }
+
+
 
 .form-container textarea {
 
     background-color: rgba(4, 2, 15, 0.1);
     width: 30%;
-    border-bottom: solid 2px white;
+    /*   border-bottom: solid 2px white; */
     outline: none;
-    resize:none
-    
+    resize: none
 }
 
 .form-container textarea:focus {
 
     outline: none;
-    resize:none
+    resize: none
 }
 
 .form-container span {
@@ -88,6 +89,21 @@ button:hover {
 
 input:focus {
 
-    outline:#037bfc;
+    outline: #037bfc;
+
+}
+
+/* validations styles */
+
+.validInfo {
+
+    border: solid 2px greenyellow;
+
+
+}
+
+.invalidInfo {
+
+    border: solid 2px red;
 
 }
